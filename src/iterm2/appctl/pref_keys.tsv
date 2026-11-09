@@ -1,0 +1,94 @@
+# from the iterm2 Python package's preferences.py (PreferenceKey): KEY	TYPE	DOC
+OpenBookmark	bool	Open the profiles window at startup?  Mutually exclusive with OPEN_DEFAULT_ARRANGEMENT_AT_START and RESTORE_ONLY_HOTKEY_AT_START.
+OpenArrangementAtStartup	bool	Open default arrangement at startup?  Mutually exclusive with OPEN_PROFILES_WINDOW_AT_START and RESTORE_ONLY_HOTKEY_AT_START.
+OpenNoWindowsAtStartup	bool	Restore only hotkey window at startup?  Mutually exclusive with OPEN_PROFILES_WINDOW_AT_START and OPEN_DEFAULT_ARRANGEMENT_AT_START.
+QuitWhenAllWindowsClosed	bool	Quit automatically when all terminal windows are closed?
+OnlyWhenMoreTabs	bool	Confirm close window when there are multiple tabs?
+PromptOnQuit	bool	Prompt before quitting?
+IRMemory	float	Memory (in megabytes) to use per session for instant replay.
+SavePasteHistory	bool	Should paste and command history be saved to disk?
+EnableRendezvous	bool	Discover hosts with bonjour?
+SUEnableAutomaticChecks	bool	Automatically check for new versions of iTerm2?
+CheckTestRelease	bool	Check for beta versions for auto update?
+LoadPrefsFromCustomFolder	bool	Load prefs from a custom folder?
+PrefsCustomFolder	string	If LOAD_PREFS_FROM_CUSTOM_FOLDER, gives the folder or URL to load prefs from.
+CopySelection	bool	Copy to pasteboard on selection?
+CopyLastNewline	bool	Include trailing newline when copying to pasteboard?
+AllowClipboardAccess	bool	Allow terminal apps to access the pasteboard?
+WordCharacters	string	Characters considered part of a word for selection.
+SmartPlacement	bool	Enable smart window placement?
+AdjustWindowForFontSizeChange	bool	Change window size when font size changes?
+MaxVertically	bool	When maximizing a window, grow it only vertically?
+UseLionStyleFullscreen	bool	Use native full screen window?
+OpenTmuxWindowsIn	int	Specifies how to open tmux windows. 0=native windows, 1=new window, 2=tabs in existing window.
+TmuxDashboardLimit	int	Open tmux dashboard if there are more than this many windows.
+AutoHideTmuxClientSession	bool	Automatically bury the tmux client session?
+TmuxUsesDedicatedProfile	bool	Use dedicated tmux profile.
+UseMetal	bool	Use the GPU renderer?
+disableMetalWhenUnplugged	bool	Disable the GPU renderer when not connected to power?
+preferIntegratedGPU	bool	Prefer the integrated GPU over discrete, if available?
+metalMaximizeThroughput	bool	Maximize throughput vs framerate?
+TabStyleWithAutomaticOption	int	Theme.  0 = Light, 1 = Dark, 2 = Light high contrast, 3 = Dark high contrast, 4 = Automatic (10.14+), 5 = Minimal (10.14+).
+TabViewType	int	Where the tab bar should be placed.  0=Top, 1=Bottom, 2=Left.
+HideTab	bool	Hide tab bar when there is only one tab?
+HideTabNumber	bool	Hide the tab number?
+HideTabCloseButton	bool	Hide the tab close button?
+HideActivityIndicator	bool	Hide the tab activity indicator?
+ShowNewOutputIndicator	bool	Show a "new output" indicator in tabs?
+ShowPaneTitles	bool	Show a per-pane title bar?
+StretchTabsToFillBar	bool	Stretch tabs horizontally to fill the tab bar?
+HideMenuBarInFullscreen	bool	Hide menu bar when in full screen?
+HideFromDockAndAppSwitcher	bool	Exclude iTerm2 from dock and app switcher?
+FlashTabBarInFullscreen	bool	Flash tab bar in full screen?
+WindowNumber	bool	Show window number in title bar?
+DimOnlyText	bool	Dim only text when indicating inactive sessions?
+SplitPaneDimmingAmount	float	How much to dim inactive split panes or inactive windows.
+DimInactiveSplitPanes	bool	Dim inactive split panes?
+UseBorder	bool	Show a border around windows?
+HideScrollbar	bool	Hide scroll bars?
+DisableFullscreenTransparency	bool	Disable transparency for full screen windows?
+EnableDivisionView	bool	Draw a line under the tab bar?
+EnableProxyIcon	bool	Show proxy icon in title bar?
+DimBackgroundWindows	bool	Dim inactive windows?
+Control	int	Remap control key.  1=Control, 2=Left option, 3=Right option, 7=Left Cmd, 8=Right Cmd.
+LeftOption	int	Remap left option key.  1=Control, 2=Left option, 3=Right option, 7=Left Cmd, 8=Right Cmd.
+RightOption	int	Remap right option key.  1=Control, 2=Left option, 3=Right option, 7=Left Cmd, 8=Right Cmd.
+LeftCommand	int	Remap left cmd key.  1=Control, 2=Left option, 3=Right option, 7=Left Cmd, 8=Right Cmd.
+RightCommand	int	Remap right cmd key.  1=Control, 2=Left option, 3=Right option, 7=Left Cmd, 8=Right Cmd.
+SwitchPaneModifier	int	Modifiers to switch split pane with number.  3=Cmd, 6=Cmd+Option, 5=Option, 9=Disable switching.
+SwitchTabModifier	int	Modifiers to switch tab by number.  3=Cmd, 6=Cmd+Option, 5=Option, 9=Disable switching.
+SwitchWindowModifier	int	Modifiers to switch window with number.  3=Cmd, 6=Cmd+Option, 5=Option, 9=Disable switching.
+CommandSelection	bool	Enable semantic history?
+PassOnControlClick	bool	Pass control-click to mouse reporting?
+OptionClickMovesCursor	bool	Opt-click moves cursor?
+ThreeFingerEmulates	bool	Three-finger tap emulates middle click?
+FocusFollowsMouse	bool	Focus follows mouse?
+TripleClickSelectsFullWrappedLines	bool	Triple click selects full wrapped lines?
+DoubleClickPerformsSmartSelection	bool	Double click performs smart selection?
+iTerm Version	string	Last-used iTerm2 version. Do not set this.
+AutoCommandHistory	bool	Enable autocomplete with command history?
+PasteSpecialChunkSize	json	Default paste chunk size.
+PasteSpecialChunkDelay	float	Default delay between paste chunks.
+NumberOfSpacesPerTab	json	Default number of spaces per tab when converting tabs when pasting.
+TabTransform	int	How to ransform tabs to space by default when pasting  0=No transformation, 1=Convert to spaces, 2=Escape with C-V
+EscapeShellCharsWithBackslash	bool	Escape shell characters with backslash when using advanced paste?
+ConvertUnicodePunctuation	bool	Convert unicode punctuation to ascii when using advanced paste?
+ConvertDosNewlines	bool	Convert DOS newlines to Unix when using advanced paste?
+RemoveControlCodes	bool	Remove control codes when using advanced paste?
+BracketedPasteMode	bool	Allow bracketed paste mode when using advanced paste?
+PasteSpecialUseRegexSubstitution	bool	Enable regex substitution when using advanced paste?
+PasteSpecialRegex	string	Regex pattern to use for substitution when using advanced paste?
+PasteSpecialSubstitution	string	Value to use for regex substitution when using advanced paste?
+LeftTabBarWidth	float	Width of left-side tab bar.
+PasteTabToStringTabStopSize	json	When converting tabs to spaces, how many spaces to use?
+ShowFullScreenTabBar	bool	Show tab bar in full screen?
+Default Toolbelt Width	json	Width of toolbelt by default.
+StatusBarPosition	int	Where does the status bar go? 0=top, 1=bottom.
+PreserveWindowSizeWhenTabBarVisibilityChanges	bool	Keep window size the same when tabbar shows/hides?
+PerPaneBackgroundImage	bool	Should each split pane have a separate bg image, or one for the whole window?
+SeparateStatusBarsPerPane	bool	Should each split pane have a separate status bar, or just one for the whole window?
+UseVirtualKeyCodesForDetectingDigits	bool	Emulate US keyboard for the purposes of switching tabs/panes/windows by keyboard?
+Size Changes Affect Profile	bool	Does increasing/decreasing text size update the backing profile?
+Actions	json	Array of dictionaries defining actions.
+HTMLTabTitles	json	Support basic HTML tags in tab titles
+DisableTransparencyForKeyWindow	bool	Force key window to be opaque?

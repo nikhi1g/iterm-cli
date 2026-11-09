@@ -1,0 +1,40 @@
+[package]
+name = "iterm-cli"
+version = "3.0.0"
+edition = "2021"
+description = "Drive iTerm2 from code: every window, tab, pane and agent, for humans and AI agents"
+license = "MIT"
+authors = ["Nikhil Gupta"]
+repository = "https://github.com/nikhi1g/iterm-cli"
+homepage = "https://github.com/nikhi1g/iterm-cli"
+readme = "README.md"
+keywords = ["iterm2", "terminal", "cli", "agents", "macos"]
+categories = ["command-line-utilities"]
+include = ["src/**", "tests/**", "proto/**", "AGENT_USAGE.md", "README.md", "LICENSE", "Cargo.toml", "Cargo.lock"]
+
+[lib]
+name = "itermkit"
+path = "src/lib.rs"
+doctest = false
+
+[[bin]]
+name = "iterm"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2"
+prost = { version = "0.14", default-features = false, features = ["std", "derive"] }
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+tungstenite = { version = "0.24", default-features = false, features = ["handshake"] }
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = 3
+strip = true
+
+[profile.dev]
+opt-level = 1
